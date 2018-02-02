@@ -1,3 +1,29 @@
-export const 'FIRST_OPTION' = 'FIRST_OPTION';
-export const 'SECOND_OPTION' = 'SECOND_OPTION';
-export const 'THIRD_OPTION' = 'THIRD_OPTION';
+
+
+
+export function ChooseFirstOption {
+  dispatch(
+    return {
+      type: 'NAV-CHOICE',
+      payload: 'FIRST-OPTION'
+    }
+  )
+}
+
+export function ChooseSecondOption {
+  dispatch(
+    return {
+      type: 'NAV-CHOICE',
+      payload: 'SECOND-OPTION'
+    }
+  )
+}
+
+export function ChooseThirdOption {
+  dispatch(
+    return {
+      type: 'NAV-CHOICE',
+      payload: 'THIRD-OPTION'
+    }
+  )
+}
