@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { First } from './components/component.first';
 import './App.css';
-
+import { Nav } from './components/component.nav'
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <First></First>
+        <Nav></Nav>
       </div>
     );
   }
