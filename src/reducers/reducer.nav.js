@@ -23,4 +23,5 @@ export default function navReducer (state = initialState, action) {
           navChoice: 'THIRD-OPTION'
         }
   }
+  return state;
 }
