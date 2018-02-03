@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
-import { First } from './component.first';
-import { Second } from './component.second';
-import { Third } from './component.third';
+import { Link } from 'react-router-dom';
 
 export class Nav extends React.Component {
 
+  constructor(props){
+    super()
+  }
+
   render(){
-    return(
-      <div>
-        <First></First>
-        <Second></Second>
-        <Third></Third>
+    let navigation = (
+      <div className="nav">
+        <nav>
+          <ul>
+            <li><Link to='/'>First</Link></li>
+            <li><Link to='/second'>Second</Link></li>
+            <li><Link to='/third'>Third</Link></li>
+          </ul>
+        </nav>
       </div>
     )
+
+
+    return <div>{navigation}</div>
+
 
   }
 }
