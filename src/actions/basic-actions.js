@@ -3,14 +3,14 @@
 
 export function ChooseFirstOption (){
     return {
-      type: 'NAV-CHOICE',
+      type: 'FIRST-OPTION',
       payload: 'FIRST-OPTION'
     }
 }
 
 export function ChooseSecondOption (){
     return {
-      type: 'NAV-CHOICE',
+      type: 'SECOND-OPTION',
       payload: 'SECOND-OPTION'
     }
 
@@ -18,7 +18,7 @@ export function ChooseSecondOption (){
 
 export function ChooseThirdOption (){
     return {
-      type: 'NAV-CHOICE',
+      type: 'THIRD-OPTION',
       payload: 'THIRD-OPTION'
     }
 }
