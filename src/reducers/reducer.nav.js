@@ -10,17 +10,17 @@ export default function navReducer (state = initialState, action) {
     case 'FIRST-OPTION':
       return {
           ...state,
-          navChoice: 'FIRST-OPTION'
+          navChoice: action.payload
         }
     case 'SECOND-OPTION':
-      return{
+      return {
           ...state,
-          navChoice: 'SECOND-OPTION'
+          navChoice: action.payload
         }
     case 'THIRD-OPTION':
-      return{
+      return {
           ...state,
-          navChoice: 'THIRD-OPTION'
+          navChoice: action.payload
         }
   }
   return state;

@@ -2,19 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
-import App from './App';
-import { store } from './redux/redux.store';
+import 'bootstrap/dist/css/bootstrap.css';
+// import App from './App';
+import { storeConfiguration, ConnectedApp } from './redux/redux.store';
 import { BrowserRouter, Route } from 'react-router-dom'
 
-
+const store = storeConfiguration();
 
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <div>
-        <Route path="/" component={App}/>
-      </div>
+        <Route path="/" component={ConnectedApp}/>
     </BrowserRouter>
   </Provider>
   ,document.getElementById('root'));
