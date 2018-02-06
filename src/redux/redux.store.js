@@ -7,7 +7,7 @@ import App from '../App';
 import * as actions from '../actions/basic-actions';
 
 export const storeConfiguration = () => {
-  //redux works asych so thunk allows us to work with it synch
+  //don't use thunk at the moment, but it's easy to drop it in when I need it later
   return createStore(
     NavReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
