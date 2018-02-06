@@ -12,13 +12,18 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <Horizontal status={this.props.navChoice}></Horizontal>
-        <Nav actions={this.props.actions}></Nav>
-        <Main></Main>
+      <div class="container-fluid h-100">
+        <div class="d-flex h-100">
+          <Nav actions={this.props.actions}></Nav>
+          <div class="d-flex col flex-column no-padding">
+            <Horizontal  status={this.props.navChoice}></Horizontal>
+            <Main></Main>
+          </div>
+        </div>
       </div>
-    );
+    )
   }
+
 }
 
 export default App;

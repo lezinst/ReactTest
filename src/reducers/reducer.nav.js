@@ -3,7 +3,6 @@ const initialState = {
   navChoice: 'FIRST-OPTION'
 }
 
-
 export default function navReducer (state = initialState, action) {
 
   switch(action.type){

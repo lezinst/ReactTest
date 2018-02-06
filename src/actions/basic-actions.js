@@ -1,6 +1,4 @@
 
-
-
 export function ChooseFirstOption (){
     return {
       type: 'FIRST-OPTION',

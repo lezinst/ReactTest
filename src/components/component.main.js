@@ -7,10 +7,13 @@ import { Third } from './component.third';
 export function Main (props){
 
   return (
-    <Switch>
-      <Route exact path='/' component={First}/>
-      <Route path='/second' component={Second}/>
-      <Route path='/third' component={Third}/>
-    </Switch>
+    <div class="content no-padding h-100">
+      <Switch>
+        <Route exact path='/' component={First}/>
+        <Route path='/second' component={Second}/>
+        <Route path='/third' component={Third}/>
+      </Switch>
+    </div>
   )
+  
 }

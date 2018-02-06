@@ -9,7 +9,6 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 const store = storeConfiguration();
 
-
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
